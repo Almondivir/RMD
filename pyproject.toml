@@ -1,0 +1,17 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name = 'rmd-firstlook'
+version = '0.1.0'
+description = 'Raw Mean Difference (RMD) — a transparent, blazing-fast first look for omics.'
+readme = 'README.md'
+license = {file = 'LICENSE'}
+requires-python = '>=3.9'
+authors = [{ name = 'Your Name', email = 'you@example.com' }]
+keywords = ['bioinformatics', 'RMD']
+dependencies = ['pandas', 'numpy', 'typer', 'rich']
+
+[project.scripts]
+rmd = 'rmd_firstlook.cli:app'
